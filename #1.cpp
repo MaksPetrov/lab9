@@ -10,7 +10,7 @@ int main()
     cin >> day;
     cout << "месяц = ";
     cin >> month;
-    if(day>20 && day<30)
+    if((day>20 && day<30)||(day<=28 && month==2))
     {
         cout << "двадцать ";
     }
@@ -94,62 +94,61 @@ int main()
     {
         cout << "двадцатое ";
     }
-    else if(day==30)
+    else if(day==30 && month!=2)
     {
         cout << "тридцатое ";
     }
-    else if(day==31)
+    else if(day==31 && month!=2 && month!=4 && month!=6 && month!=9 && month!=11)
     {
         cout << "тридцать первое ";
     }
 
-    if(month==1)
+    if(month==1 && day<=31)
     {
         cout << "января";
     }
-    if(month==2)
+    if(month==2 && day<=29)
     {
         cout << "февраля";
     }
-    if(month==3)
+    if(month==3 && day<=31)
     {
         cout << "марта";
     }
-    if(month==4)
+    if(month==4 && day<=30)
     {
         cout << "апреля";
     }
-    if(month==5)
+    if(month==5 && day<=31)
     {
         cout << "мая";
     }
-    if(month==6)
+    if(month==6 && day<=30)
     {
         cout << "июня";
     }
-    if(month==7)
+    if(month==7 && day<=31)
     {
         cout << "июля";
     }
-    if(month==8)
+    if(month==8 && day<=31)
     {
         cout << "августа";
     }
-    if(month==9)
+    if(month==9 && day<=30)
     {
         cout << "сентября";
     }
-    if(month==10)
+    if(month==10 && day<=31)
     {
         cout << "октября";
     }
-    if(month==11)
+    if(month==11 && day<=30)
     {
         cout << "ноября";
     }
-    if(month==12)
+    if(month==12 && day<=31)
     {
         cout << "декабря";
     }
 }
-
